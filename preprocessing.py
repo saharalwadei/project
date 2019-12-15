@@ -108,10 +108,7 @@ def remove_stopwords(text):
 
 
 def replace_bad_words(text):
-    offensive = ['لعن','اللعنة', 'ملعونه','ملعونة', 'عيال', 'الكلب','ولعن'
-                 ,'وملعونه','وملعونة','مقرف','مخيس','مخيسة',
-                 'المخيسة','الملعنة','الخايسة','زبالة','زباله',
-                 'زفت','الزفت','زق','','ازق','مسخرة','المسخرة','الخايس']
+    offensive = []
     temp_text = ""
     for word in text.split():
         if word in offensive:
